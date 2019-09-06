@@ -65,7 +65,9 @@ function adminnotes_install()
     );
 
     $db->insert_query("settinggroups", $adminnotes_groups);
+
     $gid        = $db->insert_id();
+    
     $adminnotes = array(
         array(
             "name" => "adminnotes_pagination",
